@@ -1,0 +1,56 @@
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-top: -50px; /* Overlap the profile picture */
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.status {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
