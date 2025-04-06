@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameClick - Welcome</title>
+  <style>
+    .welcome-window {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .welcome-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #1db954;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #1ed760;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome-window" class="welcome-window">
+    <div class="welcome-content">
+      <h1>Welcome to GameClick!</h1>
+      <p>Your go-to platform for gaming social media. Stay connected with friends, post updates, and explore new gaming content.</p>
+      <button id="close-btn">Get Started</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('close-btn').addEventListener('click', function() {
+      window.location.href = 'profile-setup.html';  // Local sign-up page
+    });
+  </script>
+</body>
+</html>

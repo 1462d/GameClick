@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameClick - Complete Your Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Complete Your Profile</h1>
+    
+    <div id="step-1">
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="profile-picture">Profile Picture</label>
+          <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+          <p id="picture-preview-text">No image selected</p>
+          <img id="profile-picture-preview" src="" alt="Profile Picture Preview" class="hidden">
+        </div>
+        <button type="button" class="submit-btn" id="continue-step-1">Continue</button>
+      </form>
+    </div>
+    
+    <div id="step-2" class="hidden">
+      <form id="social-links-form">
+        <div class="form-group">
+          <label for="twitter">Twitter</label>
+          <input type="url" id="twitter" name="twitter" placeholder="https://twitter.com/username">
+        </div>
+        <div class="form-group">
+          <label for="instagram">Instagram</label>
+          <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/username">
+        </div>
+        <div class="form-group">
+            <label for="discord">Discord</label>
+            <input type="url" id="discord" name="discord" placeholder="https://discord.com/username">
+        </div>
+        <div class="form-group">
+            <label for="facebook">Facebook</label>
+            <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/username">
+        </div>
+        <div class="form-group">
+            <label for="roblox">Roblox</label>
+            <input type="url" id="roblox" name="roblox" placeholder="https://roblox.com">
+        </div>
+        <div class="form-group">
+          <label for="youtube">YouTube</label>
+          <input type="url" id="youtube" name="youtube" placeholder="https://youtube.com/channel/username">
+        </div>
+        <button type="button" class="submit-btn" id="continue-step-2">Continue</button>
+      </form>
+    </div>
+    
+    <div id="step-3" class="hidden">
+      <form id="bio-form">
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself!" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Finish Setup</button>
+      </form>
+    </div>
+
+    <p class="error-message" id="error-message"></p>
+  </div>
+
+  <script src="profile-setup.js"></script>
+</body>
+</html>

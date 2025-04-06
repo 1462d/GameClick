@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameClick Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .profile-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            position: relative;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 150px;
+            background: red;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid white;
+        }
+        .user-info {
+            margin-top: 60px;
+        }
+        .btn {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .badges-section, .recent-posts, .recently-played, .social-media {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin: 10px;
+        }
+        .badges, .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .badge, .social-icon {
+            width: 40px;
+            height: 40px;
+            background: lightgray;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="header">
+            <div class="cover-photo"></div>
+            <div class="profile-pic"></div>
+            <div class="user-info">
+                <h2>Username</h2>
+                <h3>@Userhandle</h3>
+                <p>Following: <strong>900</strong> | Followers: <strong>1.2k</strong> | Posts: <strong>34</strong></p>
+                <button class="btn follow">Follow</button>
+                <button class="btn friend">Friend</button>
+            </div>
+        </div>
+        <div class="badges-section">
+            <h3>Badges</h3>
+            <div class="badges">
+                <div class="badge"></div>
+                <div class="badge"></div>
+                <div class="badge"></div>
+                <div class="badge"></div>
+            </div>
+            <button class="btn view-more">View more badges</button>
+        </div>
+        <div class="content-section">
+            <div class="recent-posts">
+                <h3>Recent Post</h3>
+                <p>Post content here...</p>
+                <button class="btn view-more">View more</button>
+            </div>
+            <div class="recently-played">
+                <h3>Recently Played</h3>
+                <div class="game">
+                    <p>Game Name</p>
+                    <p>Last played: Date</p>
+                </div>
+                <div class="game">
+                    <p>Game Name</p>
+                    <p>Last played: Date</p>
+                </div>
+                <button class="btn view-more">View more</button>
+                <button class="btn message">Message</button>
+            </div>
+            <div class="social-media">
+                <h3>My Social Medias</h3>
+                <div class="social-icons">
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

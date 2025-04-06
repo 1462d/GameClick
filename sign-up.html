@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameClick - Sign Up</title>
+        <link rel="stylesheet" href="sign-up.css">
+    </head>
+    <body>
+        <div class="sign-up-container">
+            <form id="sign-up">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+    
+                <fieldset>
+                    <legend>Select who the account is for:</legend>
+                    
+                    <input type="radio" id="personalUse" name="use" value="Personal Use">
+                    <label for="personalUse">Personal Use</label>
+                  
+                    <input type="radio" id="forWork" name="use" value="For my work">
+                    <label for="forWork">For my work</label>
+                  
+                    <input type="radio" id="forChild" name="use" value="For my child">
+                    <label for="forChild">For my child</label>
+                  </fieldset>
+    
+                <label for="age">Choose your age:</label>
+                <select id="age" required>
+                    <option value="">Select age:</option>
+                    <option value="7-10">7-10</option>
+                    <option value="11-14">11-14</option>
+                    <option value="14-16">14-16</option>
+                    <option value="16-18">16-18</option>
+                    <option value="18+">18+</option>
+                </select>
+    
+                <label for="Username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username:" required>
+    
+                <label for="Userhandle">Userhandle:</label>
+                <input type="text" id="userhandle" placeholder="Enter your user handle:" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password:" required>
+                
+                <label for="confirm-password">Confirm your password:</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password:" required>
+    
+                <label>
+                    <input type="checkbox" id="termsCheckbox" required>
+                    I agree to the <span id="termsBtn" class="terms-link">Terms of services</span>
+                </label>
+                <button type="submit" id="signUpButton">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <p>Need help signing up? <a href="#">Help</a></p>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
