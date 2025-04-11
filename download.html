@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameClick - Download</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f4f4f4;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    #download-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .download-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 250px;
+      transition: 0.3s;
+    }
+    .download-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #0078D7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Download GameClick</h1>
+  <div id="download-container">
+    <div class="download-card" id="windows-container">
+      <h2>Windows</h2>
+      <p>Download for Windows 10/11</p>
+      <a class="download-btn" href = "https://github.com/1462d/GameClick/releases/download/v1.0.0/GameClickSetup.exe" download>Download .exe</a>
+      " download>Download .exe</a>
+    </div>
+    <div class="download-card" id="mac-os-container">
+      <h2>MacOS</h2>
+      <p>Download for MacOS 12+</p>
+      <a class="download-btn" href="#" download>MacOS Coming soon</a>
+    </div>
+  </div>
+</body>
+</html>
